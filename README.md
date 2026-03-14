@@ -1,34 +1,34 @@
 # unrs
 
-Control the changing state of an object.
+控制对象状态的改变。
 
 ```shell
 npm install unrs
 ```
 
 - `new Unrs(target)`
-  - `path`  `<Object>` An object. 
+  - `path`  `<Object>` 一个对象，设置数据源
   
 - `instance.save()`
-  - Save a record when data changes
+  - 数据更改时保存记录
 
 - `instance.undo()`
-  - Go back one record
+  - 返回上一条记录
 
 - `instance.redo()`
-  - Forward one record
+  - 前进一条记录
 
 - `instance.reset()`
-  - Reset to the current saved state when data changes have not been saved
+  - 当数据更改尚未保存时，重置为当前保存的状态
 
 - `instance.patch(object)`
-  - `path`  `<Object>` Modify the current data to the structure of 'object'. 
+  - `path`  `<Object>` 用新数据更改
 
 - `instance.pointIndex`
-  - Pointer to the current record queue
+  - 指向当前记录队列的指针
 
 - `instance.stackLength`
-  - Current saved record length
+  - 当前保存记录长度
 
 ### Example
 
